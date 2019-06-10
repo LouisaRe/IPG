@@ -79,17 +79,17 @@ case $NR in
 	read WAS
 
 	case WER in
-		"1") $WER="g";;
-		"2") $WER="o";;
+		"1") WER1="g";;
+		"2") WER1="o";;
 	esac
 
 	case WAS in
-		1) WAS="+r";;
-		2) WAS="-r";;
-		3) WAS="+w";;
-	    4) WAS="-w";;
-		5) WAS="+x";;
-		6) WAS="-x";;
+		1) WAS1="+r";;
+		2) WAS1="-r";;
+		3) WAS1="+w";;
+	    4) WAS1="-w";;
+		5) WAS1="+x";;
+		6) WAS1="-x";;
 	esac
 	echo "$WER$WAS" $NAME
 	chmod "$WER$WAS" $NAME
