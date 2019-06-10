@@ -99,6 +99,7 @@ case $NR in
 	ls -l $NAME
 	;;
 
+
 #Neues Unterrichtsmaterial verbinden
 "4")
 	echo "Welches externes Verzeichnis möchtest du hier einbinden? Beispiel: 4iCb/kvanC"
