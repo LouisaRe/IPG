@@ -78,12 +78,12 @@ case $NR in
 	echo "6) - ausführen"
 	read WAS
 
-	case WER in
+	case $WER in
 		"1") WER1="g";;
 		"2") WER1="o";;
 	esac
 
-	case WAS in
+	case $WAS in
 		1) WAS1="+r";;
 		2) WAS1="-r";;
 		3) WAS1="+w";;
