@@ -62,7 +62,7 @@ case $NR in
 #Berechtigungen zuweisen
 "3")
 	echo "Bei welcher Datei wollen Sie die Berechtigungen anpassen?"
-	BER = ls -l ${PWD}
+	#BER = ls -l ${PWD}
 	read NAME
 	BER = ls -l ${NAME}
 	echo "Aktuelle Berechtigungen: "$BER
