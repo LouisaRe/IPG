@@ -86,13 +86,13 @@ case $NR in
 	case WAS in
 		"1") WAS = "+r";;
 		"2") WAS = "-r";;
-		"3") WAS = +w;;
+		"3") WAS = "+w";;
 		"4") WAS = "-w";;
 		"5") WAS = "+x";;
 		"6") WAS = "-x";;
 	esac
 
-	chmod $WER $WAS $NAME
+	chmod "$WER$WAS" $NAME
 
 	echo "Die Berechtigungen von "${NAME}" wurden erfolgreich angepasst: "
 	echo "Aktuelle Berechtigungen:"
