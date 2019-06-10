@@ -64,15 +64,18 @@ case $NR in
 	echo "Bei welcher Datei wollen Sie die Berechtigungen anpassen?"
 	read NAME
 	echo "Aktuelle Berechtigungen: "
-	ls -l ${NAME}.txt
+	ls -l $NAME
 	echo "Für wen wollen Sie die Berechtigungen angepassen?"
 	echo "1) Gruppe"
 	echo "2) Rest"
 	read WER
 	echo "Was soll angepasst werden?"
-	echo "1) lesen"
-	echo "2) schreiben"
-	echo "3) ausführen"
+	echo "1) + lesen"
+	echo "2) - lesen"
+	echo "3) + schreiben"
+	echo "4) - schreiben"
+	echo "5) + ausführen"
+	echo "6) - ausführen"
 	read WAS
 
 	case WER in
@@ -81,17 +84,19 @@ case $NR in
 	esac
 
 	case WAS in
-		"1") WAS = "r";;
-		"2") WAS = "w";;
-		"3") WAS = "X";;
+		"1") WAS = "+r";;
+		"2") WAS = "-r";;
+		"3") WAS = "+w";;
+		"4") WAS = "-w";;
+		"5") WAS = "+x";;
+		"6") WAS = "-X";;
 	esac
 
-
-
-
+	chmod $WER$WAS $NAME
 
 	echo "Die Berechtigungen von "${NAME}" wurden erfolgreich angepasst: "
-	echo $BER
+	echo "Aktuelle Berechtigungen:"
+	ls -l $NAME
 	;;
 
 #Neues Unterrichtsmaterial verbinden
