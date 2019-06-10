@@ -1,4 +1,4 @@
-dialog --menu Menu 40 80 4[1 "Neuen Ordner anlegen" 2 "Neue Datei anlegen"]
+dialog --menu "Menu" 40 80 4[1 "Neuen Ordner anlegen" 2 "Neue Datei anlegen"]
 
 dialog --msgbox "Hallo" 6 35
 
