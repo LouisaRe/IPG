@@ -4,7 +4,7 @@
 #B = 80
 
 #Funktionen
-function show_OA{ dialog --infobox "Bitte warte" 10 30; sleep 4
+function show_OA{ dialog --infobox "Bitte warte" 10 30 }
 
 #Hauptmenu
 HM = -1
