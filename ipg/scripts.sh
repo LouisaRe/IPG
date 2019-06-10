@@ -79,8 +79,8 @@ case $NR in
 	read WAS
 
 	case WER in
-		1) WER="g";;
-		2) WER="o";;
+		"1") $WER="g";;
+		"2") $WER="o";;
 	esac
 
 	case WAS in
