@@ -64,7 +64,7 @@ case $NR in
 	echo "Bei welcher Datei wollen Sie die Berechtigungen anpassen?"
 	read NAME
 	echo "Aktuelle Berechtigungen: "
-	ls -l $NAME
+	ls -l ${NAME}.txt
 	echo "Für wen wollen Sie die Berechtigungen angepassen?"
 	echo "1) Gruppe"
 	echo "2) Rest"
