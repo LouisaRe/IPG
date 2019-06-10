@@ -62,10 +62,9 @@ case $NR in
 #Berechtigungen zuweisen
 "3")
 	echo "Bei welcher Datei wollen Sie die Berechtigungen anpassen?"
-	#BER = ls -l ${PWD}
 	read NAME
-	BER = ls -l ${NAME}
-	echo "Aktuelle Berechtigungen: "$BER
+	echo "Aktuelle Berechtigungen: "
+	ls -l $Name
 	echo "Für wen wollen Sie die Berechtigungen angepassen?"
 	echo "1) Gruppe"
 	echo "2) Rest"
