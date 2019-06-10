@@ -101,6 +101,9 @@ case $NR in
 
 #Neues Unterrichtsmaterial verbinden
 "4")
-	echo "Hi"
-	;;
+	echo "Welches externes Verzeichnis möchtest du hier einbinden? Beispiel: 4iCb/kvanC"
+read external
+current=$PWD
+
+echo "//10.51.8.37/e_18_data11$/E1811_Unterrichte/E1811_Unterrichte_I/${external} ${current} cifs credentials=/home/user/.smbcredentials,vers=3.0 0 0" >> /etc/fstab
 esac
