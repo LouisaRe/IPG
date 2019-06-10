@@ -91,7 +91,7 @@ case $NR in
 		"5") WAS = "+x";;
 		"6") WAS = "-x";;
 	esac
-
+	echo "$WER$WAS" $NAME
 	chmod "$WER$WAS" $NAME
 
 	echo "Die Berechtigungen von "${NAME}" wurden erfolgreich angepasst: "
